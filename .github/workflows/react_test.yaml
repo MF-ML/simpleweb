@@ -10,7 +10,7 @@ jobs:
     - name: checkout another repository
       uses: actions/checkout@v2
       with:
-        repository: MF_ML/docker-react  
+        repository: MF-ML/docker-react  
         ref: master
         path: .
     - name: Setup Node.js environment
