@@ -1,12 +1,10 @@
 on: push
-name: Node Code Formatter
+name: Obfuscate
 jobs:
-  lint:
-    name: Node Code Formatter
+  Obfuscate:
     runs-on: ubuntu-latest
     steps:
-    - name: Node Code Formatter
-      uses: MarvinJWendt/run-node-formatter@stable
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Obfuscate-Javascript
+      uses: florrdv/JS-Obfuscator@v1.0.2
+
 
